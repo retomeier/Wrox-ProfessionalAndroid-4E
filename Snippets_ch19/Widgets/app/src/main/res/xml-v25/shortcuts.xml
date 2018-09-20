@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Listing 19-26: Defining your static App Shortcuts -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+  <shortcut
+    android:shortcutId="orbitnuke"
+    android:enabled="true"
+    android:icon="@drawable/nuke_icon"
+    android:shortcutShortLabel="@string/orbitnuke_shortcut_short_label"
+    android:shortcutLongLabel="@string/orbitnuke_shortcut_long_label"
+    android:shortcutDisabledMessage="@string/orbitnuke_shortcut_disabled">
+    <intent
+      android:action="android.intent.action.VIEW"
+      android:targetPackage="com.professionalandroid.apps.aliens"
+      android:targetClass="com.professionalandroid.apps.aliens.NukeActivity"/>
+    <categories android:name="android.shortcut.conversation" />
+  </shortcut>
+</shortcuts>

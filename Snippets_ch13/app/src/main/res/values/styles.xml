@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Listing 13-1: Defining a custom theme for Views -->
+<resources>
+  <style
+    name="AppTheme"
+    parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <!-- The implied parent here is AppTheme -->
+  <style name="AppTheme.Custom">
+    <item name="colorControlNormal">@color/colorControlNormal</item>
+    <item name="colorControlActivated">@color/colorControlActivated</item>
+  </style>
+</resources>

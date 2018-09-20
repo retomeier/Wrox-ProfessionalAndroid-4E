@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--  Listing 13-17: Defining a Menu for a bottom navigation bar -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+    android:id="@+id/nav_home"
+    android:icon="@drawable/nav_home"
+    android:title="@string/nav_home" />
+  <item
+    android:id="@+id/nav_profile"
+    android:icon="@drawable/nav_profile"
+    android:title="@string/nav_profile" />
+  <item
+    android:id="@+id/nav_notifications"
+    android:icon="@drawable/nav_notifications"
+    android:title="@string/nav_notifications" />
+</menu>

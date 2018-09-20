@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.professionalandroid.apps.myapplication">
+
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity android:name=".MyActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+
+    <receiver
+      android:name=".BackgroundBroadcastReceiver"
+      android:enabled="true"
+      android:exported="true">
+    </receiver>
+
+    <!-- Listing 11-9: Adding a Job Service to the application manifest -->
+    <service
+      android:name=".SimpleJobService"
+      android:exported="true"
+      android:permission="android.permission.BIND_JOB_SERVICE"/>
+    <service
+      android:name=".BackgroundJobService"
+      android:exported="true"
+      android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+    <!-- Listing 11-13: Adding a Firebase Job Dispatcher Job Service to the application manifest -->
+    <service
+      android:name=".FirebaseJobService"
+      android:exported="false">
+      <intent-filter>
+        <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+      </intent-filter>
+    </service>
+
+    <!-- Listing 11-29: Registering the FirebaseMessagingService -->
+    <service android:name=".MyFirebaseMessagingService">
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+      </intent-filter>
+    </service>
+
+    <!-- Listing 11-27: Specifying Firebase Notification metadata -->
+    <meta-data
+      android:name="com.google.firebase.messaging.default_notification_icon"
+      android:value="@drawable/ic_notification"/>
+    <meta-data
+      android:name="com.google.firebase.messaging.default_notification_color"
+      android:value="@color/colorPrimary"/>
+    <meta-data
+      android:name="com.google.firebase.messaging.default_notification_channel_id"
+      android:value="@string/messages_channel_name"/>
+
+    <receiver
+      android:name=".MyNotificationClickReceiver"
+      android:enabled="true"
+      android:exported="true">
+    </receiver>
+
+    <activity android:name=".AlarmClockActivity">
+    </activity>
+
+    <service
+      android:name=".MyBoundService"
+      android:enabled="true"
+      android:exported="true">
+    </service>
+    <service
+      android:name=".MyService"
+      android:enabled="true"
+      android:exported="true">
+    </service>
+  </application>
+
+</manifest>

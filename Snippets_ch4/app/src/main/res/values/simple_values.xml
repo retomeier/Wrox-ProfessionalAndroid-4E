@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Listing 4-1: Simple values XML -->
+
+<resources>
+  <string name="app_name">To Do List</string>
+  <plurals name="androidPlural">
+    <item quantity="one">One android</item>
+    <item quantity="other">%d androids</item>
+  </plurals>
+  <color name="app_background">#FF0000FF</color>
+  <dimen name="default_border">5px</dimen>
+  <integer name="book_ignition_temp">451</integer>
+  <bool name="is_a_trap">true</bool>
+  <string-array name="string_array">
+    <item>Item 1</item>
+    <item>Item 2</item>
+    <item>Item 3</item>
+  </string-array>
+  <integer-array name="integer_array">
+    <item>3</item>
+    <item>2</item>
+    <item>1</item>
+  </integer-array>
+  <array name="color_typed_array">
+    <item>#FF0000FF</item>
+    <item>#00FFFF00</item>
+    <item>#FF00FF00</item>
+  </array>
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+  </style>
+</resources>

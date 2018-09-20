@@ -1,0 +1,13 @@
+<resources>
+  <string name="app_name">Earthquake</string>
+  <string name="earthquake_feed">
+    https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.atom
+  </string>
+  <string name="menu_update">Refresh Earthquakes</string>
+  <string name="auto_update_prompt">Auto refresh?</string>
+  <string name="update_freq_prompt">Refresh Frequency</string>
+  <string name="min_quake_mag_prompt">Minimum Quake Magnitude</string>
+  <string name="menu_settings">Settings</string>
+  <string name="search_label">Search</string>
+  <string name="search_hint">Search for earthquakes…</string>
+</resources>

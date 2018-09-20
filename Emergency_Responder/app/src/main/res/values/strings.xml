@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">EmergencyResponder</string>
+  <string name="allClearButtonText">Signal All Clear</string>
+  <string name="maydayButtonText">Request Help</string>
+  <string name="allClearText">I am safe and well. Worry not!</string>
+  <string name="maydayText">Tell my mother I love her.</string>
+  <string name="querystring">are you OK?</string>
+  <string name="querylistprompt">People who want to know if you\'re ok</string>
+</resources>

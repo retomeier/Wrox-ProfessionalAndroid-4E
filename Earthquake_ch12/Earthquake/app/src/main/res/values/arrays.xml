@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="update_freq_options">
+    <item>Every 15 minutes</item>
+    <item>Every hour</item>
+    <item>Every 4 hours</item>
+    <item>Every 12 hours</item>
+    <item>Every 24 hours</item>
+  </string-array>
+  <string-array name="update_freq_values">
+    <item>15</item>
+    <item>60</item>
+    <item>240</item>
+    <item>720</item>
+    <item>1440</item>
+  </string-array>
+  <string-array name="magnitude_options">
+    <item>All Magnitudes</item>
+    <item>Magnitude 3</item>
+    <item>Magnitude 5</item>
+    <item>Magnitude 6</item>
+    <item>Magnitude 7</item>
+    <item>Magnitude 8</item>
+  </string-array>
+  <string-array name="magnitude_values">
+    <item>0</item>
+    <item>3</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+  </string-array>
+</resources>

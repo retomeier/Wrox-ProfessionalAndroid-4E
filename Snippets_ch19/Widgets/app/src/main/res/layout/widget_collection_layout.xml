@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Listing 19-14: Defining the Widget layout with a Stack Widget -->
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <StackView
+    android:id="@+id/widget_stack_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  />
+</FrameLayout>

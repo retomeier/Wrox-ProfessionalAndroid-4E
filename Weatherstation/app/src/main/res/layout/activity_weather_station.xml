@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <TextView
+    android:id="@+id/temperature"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="28sp"
+    android:text="Temperature"
+    android:layout_margin="10dp"/>
+  <TextView
+    android:id="@+id/pressure"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="28sp"
+    android:text="Pressure"
+    android:layout_margin="10dp"/>
+  <TextView
+    android:id="@+id/humidity"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="28sp"
+    android:text="Humidity"
+    android:layout_margin="10dp"/>
+  <TextView
+    android:id="@+id/light"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="28sp"
+    android:text="Light"
+    android:layout_margin="10dp"/>
+</LinearLayout>

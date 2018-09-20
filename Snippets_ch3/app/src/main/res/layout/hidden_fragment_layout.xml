@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Listing 3-11: Hiding Fragments in layout variations -->
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <FrameLayout
+    android:id="@+id/list_container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    />
+  <FrameLayout
+    android:id="@+id/details_container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_weight="3"
+    android:visibility="gone"
+    />
+</LinearLayout>

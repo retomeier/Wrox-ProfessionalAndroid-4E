@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Listing 12-2: A material design ripple layout -->
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:clickable="true"
+  android:background="?attr/selectableItemBackground">
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Click me!" />
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Clicking anywhere on the layout produces a ripple effect" />
+
+  <Button
+    android:id="@+id/reveal_button"
+    android:text="REVEAL!"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+  <TextView
+    android:id="@+id/hidden_view"
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="This View is hidden until it is revealed." />
+
+  <ImageView
+    android:id="@+id/avatar_view"
+    android:src="@drawable/heart_anim"
+    android:transitionName="avatar_view_transition"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+  <TextView
+    android:id="@+id/username_view"
+    android:text="Username Text View"
+    android:transitionName="username_view_transition"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</LinearLayout>

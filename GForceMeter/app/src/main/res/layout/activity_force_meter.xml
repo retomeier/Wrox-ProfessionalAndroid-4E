@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <TextView
+    android:id="@+id/acceleration"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="32sp"
+    android:text="Current Acceleration"
+    android:layout_margin="10dp"/>
+  <TextView
+    android:id="@+id/maxAcceleration"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="40sp"
+    android:text="Maximum Acceleration"
+    android:layout_margin="10dp"/>
+</LinearLayout>

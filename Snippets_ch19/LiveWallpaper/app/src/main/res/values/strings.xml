@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">Live Wallpaper</string>
+  <string name="author">Reto Meier</string>
+  <string name="description">This is a Live Wallpaper</string>
+</resources>

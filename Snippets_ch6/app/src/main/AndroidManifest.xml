@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.professionalandroid.apps.myapplication">
+
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <receiver android:name=".LifeformDetectedReceiver">
+    </receiver>
+    <activity android:name=".MyActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:name=".MyOtherActivity">
+    </activity>
+
+    <!-- Listing 6-7: Registering an Activity as an Intent Receiver for
+                      viewing content from a specific website using
+                      an Intent Filter
+    -->
+    <activity android:name=".MyBlogViewerActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+
+        <data
+          android:host="blog.radioactiveyak.com"
+          android:scheme="http"/>
+      </intent-filter>
+    </activity>
+
+    <!-- Listing 6-9: Advertising supported Activity actions -->
+    <activity
+      android:name=".NostromoController"
+      android:label="@string/title_activity_nostromo_controller"
+      android:theme="@style/AppTheme.NoActionBar">
+      <intent-filter android:label="Nuke From Orbit">
+        <action android:name="com.professionalandroid.nostromo.NUKE_FROM_ORBIT"/>
+
+        <data android:mimeType="vnd.android.cursor.item/vnd.com.professionalandroid.provider.moonbase"/>
+
+        <category android:name="android.intent.category.ALTERNATIVE"/>
+        <category android:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+      </intent-filter>
+    </activity>
+  </application>
+
+</manifest>

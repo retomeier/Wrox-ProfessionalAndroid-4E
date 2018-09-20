@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">My Application</string>
+  <string name="messages_channel_name">my_notification_channel</string>
+  <string name="delete_action">Delete</string>
+  <string name="reply_hint_text">Reply…</string>
+  <string name="reply_action">Reply</string>
+</resources>

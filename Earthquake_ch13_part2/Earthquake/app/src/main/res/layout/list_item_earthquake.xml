@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+    <variable name="timeformat" type="java.text.DateFormat" />
+    <variable name="magnitudeformat" type="java.text.NumberFormat" />
+    <variable name="earthquake"
+              type="com.professionalandroid.apps.earthquake.Earthquake" />
+  </data>
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin">
+    <TextView
+      android:id="@+id/magnitude"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:gravity="center_vertical"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:textAppearance="?attr/textAppearanceListItem"
+      android:text="@{magnitudeformat.format(earthquake.magnitude)}"/>
+    <TextView
+      android:id="@+id/date"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/text_margin"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintRight_toLeftOf="@id/magnitude"
+      android:text="@{timeformat.format(earthquake.date)}"/>
+    <TextView
+      android:id="@+id/details"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/text_margin"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toLeftOf="@id/magnitude"
+      app:layout_constraintTop_toBottomOf="@id/date"
+      android:text="@{earthquake.details}"/>
+  </android.support.constraint.ConstraintLayout>
+</layout>

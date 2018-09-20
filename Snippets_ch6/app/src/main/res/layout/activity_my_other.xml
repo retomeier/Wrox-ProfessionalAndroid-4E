@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".MyOtherActivity">
+  <Button
+    android:id="@+id/ok_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Okay"
+    tools:layout_editor_absoluteX="204dp"
+    tools:layout_editor_absoluteY="244dp"/>
+
+  <Button
+    android:id="@+id/cancel_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Cancel"
+    tools:layout_editor_absoluteX="99dp"
+    tools:layout_editor_absoluteY="100dp"/>
+</LinearLayout>

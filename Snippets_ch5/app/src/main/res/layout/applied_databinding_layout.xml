@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Listing 5-7: Applying Data Binding variables in a layout -->
+
+<layout
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <data>
+    <variable name="user" type="com.professionalandroid.apps.databinding.User" />
+  </data>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@{user.userName}" />
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@{user.email}" />
+  </LinearLayout>
+</layout>

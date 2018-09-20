@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Listing 13-2: Defining a menu in XML -->
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+    android:id="@+id/action_settings"
+    android:title="@string/action_settings" />
+  <item
+    android:id="@+id/action_about"
+    android:title="@string/action_about" />
+  <item
+    android:id="@+id/action_filter"
+    android:title="@string/action_filter" />
+
+  <!-- Listing 13-7: Adding an Action View to a Menu Item -->
+  <item
+    android:id="@+id/action_search"
+    android:icon="@drawable/action_search"
+    android:title="@string/action_search"
+    app:showAsAction="ifRoom|collapseActionView"
+    app:actionViewClass="android.support.v7.widget.SearchView" />
+
+  <!-- Listing 13-8: Adding an Action Provider to a Menu Item -->
+  <item
+    android:id="@+id/action_media_route"
+    android:title="@string/action_cast"
+    app:showAsAction="always"
+    app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider"/>
+</menu>

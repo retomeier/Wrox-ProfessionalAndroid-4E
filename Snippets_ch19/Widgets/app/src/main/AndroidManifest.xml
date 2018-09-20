@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.professionalandroid.apps.widgetsnippets">
+
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+
+    <!-- LISTING 19-27: Adding the Shortcuts Resource to the application manifest -->
+    <activity
+      android:name=".MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+      <meta-data
+        android:name="android.app.shortcuts"
+        android:resource="@xml/shortcuts"
+        />
+    </activity>
+
+    <!-- Listing 19-4: App Widget manifest node -->
+    <receiver android:name=".SkeletonAppWidget">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
+
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/widget_settings"/>
+    </receiver>
+
+    <!-- Listing 19-12: App Widget configuration Activity manifest entry -->
+    <activity
+      android:name=".MyWidgetConfigurationActivity"
+      android:label="@string/title_activity_my_widget_configuration">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+      </intent-filter>
+    </activity>
+
+    <!-- Listing 19-18: Adding a Remote Views Service to the manifest -->
+    <service
+      android:name=".MyRemoteViewsService"
+      android:permission="android.permission.BIND_REMOTEVIEWS">
+    </service>
+
+    <receiver android:name=".MyCollectionViewWidget">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/my_collection_view_widget_info" />
+    </receiver>
+
+  </application>
+
+</manifest>

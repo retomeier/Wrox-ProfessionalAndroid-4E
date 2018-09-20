@@ -1,0 +1,6 @@
+<resources>
+  <string name="app_name">Widget Snippets</string>
+  <string name="widget_text">Sample Widget Text</string>
+  <string name="widget_label">My Widget</string>
+  <string name="title_activity_my_widget_configuration">My Widget Configuration Activity</string>
+</resources>

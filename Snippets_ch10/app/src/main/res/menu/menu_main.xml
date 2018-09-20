@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Listing 10-33: Adding a Search View to the app bar -->
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".MainActivity">
+  <item
+    android:id="@+id/search_view"
+    android:title="@string/search_label"
+    app:showAsAction="collapseActionView|ifRoom"
+    app:actionViewClass="android.support.v7.widget.SearchView" />
+</menu>

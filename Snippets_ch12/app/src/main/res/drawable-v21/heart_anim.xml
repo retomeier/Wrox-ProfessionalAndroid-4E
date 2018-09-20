@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Listing 12-1: A simple Animated Vector Drawable -->
+
+<animated-vector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:aapt="http://schemas.android.com/aapt">
+  <aapt:attr name="android:drawable">
+    <vector
+      android:height="256dp"
+      android:width="256dp"
+      android:viewportWidth="32"
+      android:viewportHeight="32">
+      <path
+        android:name="heart"
+        android:fillColor="#8f00"
+        android:pathData="M20.5,9.5
+                          c-1.955,0,-3.83,1.268,-4.5,3
+                          c-0.67,-1.732,-2.547,-3,-4.5,-3
+                          C8.957,9.5,7,11.432,7,14
+                          c0,3.53,3.793,6.257,9,11.5
+                          c5.207,-5.242,9,-7.97,9,-11.5
+                          C25,11.432,23.043,9.5,20.5,9.5z" />
+    </vector>
+  </aapt:attr>
+
+  <target android:name="heart">
+    <aapt:attr name="android:animation">
+      <objectAnimator
+        android:duration="1000"
+        android:propertyName="fillColor"
+        android:valueFrom="#8f00"
+        android:valueTo="#ffc0cb"
+        android:interpolator="@android:interpolator/fast_out_slow_in" />
+    </aapt:attr>
+  </target>
+</animated-vector>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <android.support.design.widget.CollapsingToolbarLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+    </android.support.design.widget.CollapsingToolbarLayout>
+  </android.support.design.widget.AppBarLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <fragment
+      android:id="@+id/EarthquakeListFragment"
+      android:name=
+        "com.professionalandroid.apps.earthquake.EarthquakeListFragment"
+    android:layout_width="360dp"
+    android:layout_height="match_parent"/>
+    <fragment
+      android:id="@+id/EarthquakeMapFragment"
+      android:name=
+        "com.professionalandroid.apps.earthquake.EarthquakeMapFragment"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"/>
+  </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Listing 19-1: App Widget XML layout resource -->
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <ImageView
+    android:id="@+id/widget_image"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/icon"
+    />
+  <TextView
+    android:id="@+id/widget_text"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:text="@string/widget_text"
+    />
+</LinearLayout>

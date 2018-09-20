@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <SwitchPreference
+    android:key="PREF_AUTO_UPDATE"
+    android:title="@string/auto_update_prompt"
+    android:summary="Select to turn on automatic updating"
+    android:defaultValue="true"
+    />
+  <ListPreference
+    android:key="PREF_UPDATE_FREQ"
+    android:title="@string/update_freq_prompt"
+    android:summary="Frequency at which to refresh earthquake list"
+    android:entries="@array/update_freq_options"
+    android:entryValues="@array/update_freq_values"
+    android:dialogTitle="Refresh frequency"
+    android:defaultValue="60"
+  />
+  <ListPreference
+    android:key="PREF_MIN_MAG"
+    android:title="@string/min_quake_mag_prompt"
+    android:summary="Select the minimum magnitude earthquake to display"
+    android:entries="@array/magnitude_options"
+    android:entryValues="@array/magnitude_values"
+    android:dialogTitle="Magnitude"
+    android:defaultValue="3"
+    />
+</PreferenceScreen>

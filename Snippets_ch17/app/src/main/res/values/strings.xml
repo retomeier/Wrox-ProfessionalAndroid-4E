@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">My Application</string>
+  <string name="pause">Pause</string>
+  <string name="skip_to_next">Skip</string>
+</resources>

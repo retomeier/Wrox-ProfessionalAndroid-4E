@@ -1,4 +1,5 @@
-Professional Android, 4th Edition Code Downloads\n
+Professional Android, 4th Edition Code Downloads
+
 Reto Meier and Ian Lake
 
 Copyright 2018 John Wiley Wiley & Sons, Inc.
